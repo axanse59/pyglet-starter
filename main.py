@@ -1,5 +1,14 @@
 import pyglet # import the library
 win= pyglet.window.Window() # create the window
+win.blit()
+
+
+text = pyglet.text.Label('Hello, world', x = 200, y = 200)
+
+
+# inside the loop:
+def on_draw():
+  text.draw()
 
 # Create a sprite
 img= pyglet.image.load('assets/hero/Old hero.png')
