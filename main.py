@@ -1,4 +1,5 @@
 import pyglet # import the library
+import util
 win= pyglet.window.Window() # create the window
 
 # Create a sprite
@@ -33,32 +34,35 @@ def update(dt):
 # Start the event loop
 @win.event
 def on_draw():
-    win.clear()
-    smol_the.blit(0,150)
-    smol_the.blit(32,150)
-    smol_the.blit(64,150)
-    smol_the.blit(96,150)
-    smol_the.blit(128,150)
-    smol_the.blit(160,150)
-    smol_the.blit(192,150)
-    smol_the.blit(224,150)
-    smol_the.blit(256,150)
-    smol_the.blit(288,150)
-    smol_the.blit(320,150)
-    smol_the.blit(352,150)
-    smol_the.blit(384,150)
-    smol_the.blit(416,150)
-    smol_the.blit(448,150)
-    smol_the.blit(480,150)
-    smol_the.blit(544,150)
-    smol_the.blit(576,150)
-    smol_the.blit(608,150)
-    smol_the.blit(640,150)
-    smol_the.blit(672,150)
-    smol_the.blit(704,150)
-    spr.draw()
-    bg.draw()
-    #two.draw()
+  util.pixelScale()
+  win.clear()
+  bg.draw()
+  spr.draw()
+  smol_the.blit(0,150)
+  smol_the.blit(32,150)
+  smol_the.blit(64,150)
+  smol_the.blit(96,150)
+  smol_the.blit(128,150)
+  smol_the.blit(160,150)
+  smol_the.blit(192,150)
+  smol_the.blit(224,150)
+  smol_the.blit(256,150)
+  smol_the.blit(288,150)
+  smol_the.blit(320,150)
+  smol_the.blit(352,150)
+  smol_the.blit(384,150)
+  smol_the.blit(416,150)
+  smol_the.blit(448,150)
+  smol_the.blit(480,150)
+  smol_the.blit(544,150)
+  smol_the.blit(576,150)
+  smol_the.blit(608,150)
+  smol_the.blit(640,150)
+  smol_the.blit(672,150)
+  smol_the.blit(704,150)
+  spr.draw()
+  
+  #two.draw()
 
 
 
