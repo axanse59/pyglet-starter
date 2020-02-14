@@ -12,6 +12,8 @@ smol_the = the.get_region(x=128, y=96, width=32, height=16)
 
 he= pyglet.image.load('parallax-mountain-bg.png')
 smol_he = he.get_region(x=0, y=0, width=270, height=160)
+bg = pyglet.sprite.Sprite(smol_he, 0, 0)
+bg.scale = 3
 #two = pyglet.sprite.Sprite(smol_the, x = 200, y = 200)
 
 keys = pyglet.window.key.KeyStateHandler()
@@ -55,7 +57,7 @@ def on_draw():
     smol_the.blit(672,150)
     smol_the.blit(704,150)
     spr.draw()
-    smol_he.blit(0,0)
+    bg.draw()
     #two.draw()
 
 
