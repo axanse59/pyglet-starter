@@ -16,7 +16,6 @@ smol_he = he.get_region(x=0, y=0, width=270, height=160)
 bg = pyglet.sprite.Sprite(smol_he, 0, 0)
 bg.scale = 3
 #two = pyglet.sprite.Sprite(smol_the, x = 200, y = 200)
-
 keys = pyglet.window.key.KeyStateHandler()
 
 def update(dt):
